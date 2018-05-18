@@ -23,3 +23,7 @@ var myStatus;
 })(myStatus || (myStatus = {}));
 ;
 console.log(myStatus.newUser);
+/* Tuple is a mix of both string & number */
+var newStudents;
+newStudents = ['Hero', 22];
+console.log(newStudents);

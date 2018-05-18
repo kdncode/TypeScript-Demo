@@ -24,3 +24,8 @@ console.log(flag)
 /* Enum */
 enum myStatus { newUser, addToCart };
 console.log(myStatus.newUser);
+
+/* Tuple is a mix of both string & number */
+let newStudents : [string, number];
+newStudents = ['Hero', 22]
+console.log(newStudents)
