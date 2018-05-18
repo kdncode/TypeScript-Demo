@@ -40,3 +40,11 @@ x = {
     age: 10
 }
 console.log(x)
+
+/* Void -> No return in func */
+function add() : void {
+    console.log('Hello Void'); 
+    return 400;
+}
+
+add();
