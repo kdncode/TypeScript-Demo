@@ -46,3 +46,4 @@ add();
 /* Parse */
 var abc = "This is the best";
 console.log(abc.length);
+console.log(abc.length);

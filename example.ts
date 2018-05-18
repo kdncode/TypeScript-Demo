@@ -52,3 +52,4 @@ add();
 /* Parse */
 let abc : any = "This is the best";
 console.log((<string>abc).length);
+console.log((abc as string).length);
