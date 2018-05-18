@@ -29,3 +29,9 @@ console.log(myStatus.newUser);
 let newStudents : [string, number];
 newStudents = ['Hero', 22]
 console.log(newStudents)
+
+/* Any */
+let x : any;
+x = "Hello Any Type"
+x = 100;
+console.log(x)
