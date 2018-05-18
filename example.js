@@ -31,4 +31,9 @@ console.log(newStudents);
 var x;
 x = "Hello Any Type";
 x = 100;
+x = ['hihi', 900];
+x = {
+    name: 'Super Man',
+    age: 10
+};
 console.log(x);
