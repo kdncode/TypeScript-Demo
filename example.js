@@ -43,3 +43,6 @@ function add() {
     return 400;
 }
 add();
+/* Parse */
+var abc = "This is the best";
+console.log(abc.length);
