@@ -33,3 +33,13 @@ function calculate(x, y) {
     console.log(cal);
 }
 calculate(2, 4);
+// Anonymous function
+var myInfo = function (x, y) {
+    return "Hello " + y + ", are you " + x + " years old?";
+};
+console.log(myInfo(3, 'Pool'));
+// Arrow Function
+var arrow = function (x) {
+    return x + 11;
+};
+console.log(arrow(4));

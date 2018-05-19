@@ -41,3 +41,15 @@ function calculate(x: number, y: number): void {
 }
 
 calculate(2, 4)
+
+// Anonymous function
+let myInfo = function(x: number, y: string) : string {
+    return `Hello ${y}, are you ${x} years old?`
+}
+console.log(myInfo(3, 'Pool'));
+
+// Arrow Function
+let arrow = (x: number) : number => {
+    return x + 11;
+}
+console.log(arrow(4));
