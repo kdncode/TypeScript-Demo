@@ -7,7 +7,7 @@ function add1(x: string) : string {
     return x;
 }
 
-// Generic
+// Generic for flexible 
 function add2<T> (x: T) : T {
     return x;
 }

@@ -5,7 +5,7 @@ function add(x) {
 function add1(x) {
     return x;
 }
-// Generic
+// Generic for flexible 
 function add2(x) {
     return x;
 }
