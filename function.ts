@@ -33,3 +33,11 @@ function myAny(): any {
 }
 
 console.log(myAny());
+
+// Function with parameters
+function calculate(x: number, y: number): void {
+    let cal = (x + y)/2;
+    console.log(cal);   
+}
+
+calculate(2, 4)

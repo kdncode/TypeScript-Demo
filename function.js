@@ -27,3 +27,9 @@ function myAny() {
     return students;
 }
 console.log(myAny());
+// Function with parameters
+function calculate(x, y) {
+    var cal = (x + y) / 2;
+    console.log(cal);
+}
+calculate(2, 4);
