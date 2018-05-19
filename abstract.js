@@ -9,15 +9,24 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
+// abstract class OS {
+//     name: string;
+//     public sendMessage() {
+//         console.log('Send message');
+//     }
+//     public call() {
+//         console.log('Call');
+//     }
+// }
+// class Android extends OS {
+// }
+// let iOS = new Android();
+// iOS.sendMessage();
+// iOS.call();
+// Use abstract for function
 var OS = /** @class */ (function () {
     function OS() {
     }
-    OS.prototype.sendMessage = function () {
-        console.log('Send message');
-    };
-    OS.prototype.call = function () {
-        console.log('Call');
-    };
     return OS;
 }());
 var Android = /** @class */ (function (_super) {
@@ -25,8 +34,14 @@ var Android = /** @class */ (function (_super) {
     function Android() {
         return _super !== null && _super.apply(this, arguments) || this;
     }
+    Android.prototype.sendMessage = function () {
+        console.log('Send messages from Android OS');
+    };
+    Android.prototype.call = function () {
+        return 'Call from Android';
+    };
     return Android;
 }(OS));
 var iOS = new Android();
 iOS.sendMessage();
-iOS.call();
+console.log(iOS.call());
