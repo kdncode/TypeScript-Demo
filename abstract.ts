@@ -34,7 +34,7 @@ class Android extends OS {
         console.log('Send messages from Android OS');
     }
 
-    call() {
+    call() : string {
         return 'Call from Android';
     }
 }
