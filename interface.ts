@@ -13,3 +13,34 @@ function showInfo(student : people) : void {
 }
 
 showInfo({name: 'John', age: 33})
+
+// Use interface in Class
+interface Phones {
+    name: string;
+    price: number;
+    desc: string;
+
+    showInfo() : void;
+    showPrice(price: number) : any;
+    showDes() : void;
+}
+
+// Implements interface -> class -> Must have all the props & methods
+// above & may expand more 
+class Apple implements Phones {
+    name: string;
+    price: number;
+    desc: string;
+
+    showInfo() : void {
+        console.log('Check Apple Phone Info');
+    }
+
+    showPrice(price: number) : any {
+        return `Too expensive`;
+    }
+
+    showDes() : void {
+        console.log('Nice phone tho');
+    }
+}
