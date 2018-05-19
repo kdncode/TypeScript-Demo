@@ -6,10 +6,17 @@ var Hero = /** @class */ (function () {
         get: function () {
             return this._name;
         },
+        set: function (v) {
+            this._name = v;
+        },
         enumerable: true,
         configurable: true
     });
     return Hero;
 }());
+// Getter
 var zeus = new Hero('Zeus');
+console.log(zeus.name);
+// Setter
+zeus.name = "I am a new Zeus";
 console.log(zeus.name);
