@@ -24,3 +24,19 @@ var Computers = /** @class */ (function () {
 }());
 Computers.showInfo(['Macbook', 'Dell', 'HP']);
 Computers.showInfo(['Macbook', 4000, true]);
+// Generic class
+var phoneCases = /** @class */ (function () {
+    function phoneCases(id, name, price) {
+        this.id = id;
+        this.name = name;
+        this.price = price;
+    }
+    phoneCases.prototype.showCase = function () {
+        console.log("id: " + this.id + "\n             name: " + this.name + "\n             price: " + this.price);
+    };
+    return phoneCases;
+}());
+var Oppo = new phoneCases(1, 'Oppo Phone', 20);
+Oppo.showCase();
+var Lg = new phoneCases(2, 'LG Phone', '10 USD');
+Lg.showCase();
